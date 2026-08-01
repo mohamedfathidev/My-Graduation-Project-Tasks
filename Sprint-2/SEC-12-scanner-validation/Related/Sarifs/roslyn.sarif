@@ -1,0 +1,180 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.6.0.0",
+        "fileVersion": "5.6.0-2.26329.109 (35b593bebfcba58f8e78298cef14c2761f5d86c6)",
+        "semanticVersion": "5.6.0"
+      },
+      "results": [
+        {
+          "ruleId": "SCS0028",
+          "level": "warning",
+          "message": "TypeNameHandling is set to the other value than 'None'. It may lead to deserialization vulnerability.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/runner/work/sentinelai-fixtures/sentinelai-fixtures/src/OrderApp/Controllers/OrdersController.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 28,
+                  "endLine": 16,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SCS0006",
+          "level": "warning",
+          "message": "Weak hashing function.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/runner/work/sentinelai-fixtures/sentinelai-fixtures/src/OrderApp/Services/AuthService.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 25,
+                  "endLine": 20,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SCS0002",
+          "level": "warning",
+          "message": "Potential SQL injection vulnerability was found where 'cmdText' in 'SqlCommand.SqlCommand(string cmdText, SqlConnection connection)' may be tainted by user-controlled data from 'string name' in method 'IActionResult UsersController.SearchUsers(string name)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/runner/work/sentinelai-fixtures/sentinelai-fixtures/src/OrderApp/Controllers/UsersController.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 40,
+                  "endLine": 22,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///home/runner/work/sentinelai-fixtures/sentinelai-fixtures/src/OrderApp/Controllers/UsersController.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 38,
+                  "endLine": 16,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SCS0007",
+          "level": "warning",
+          "message": "Potential XML eXternal Entity (XXE) vulnerability.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/runner/work/sentinelai-fixtures/sentinelai-fixtures/src/OrderApp/Controllers/ReportsController.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 19,
+                  "endLine": 33,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SCS0007",
+          "level": "warning",
+          "message": "Potential XML eXternal Entity (XXE) vulnerability.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/runner/work/sentinelai-fixtures/sentinelai-fixtures/src/OrderApp/Controllers/ReportsController.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 24,
+                  "endLine": 28,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "SCS0002": {
+          "id": "SCS0002",
+          "shortDescription": "Potential SQL injection vulnerability was found where '{0}' in '{1}' may be tainted by user-controlled data from '{2}' in method '{3}'.",
+          "fullDescription": "The untrusted value passed to the SQL query should be validated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://security-code-scan.github.io/#SCS0002",
+          "properties": {
+            "category": "Security",
+            "isEnabledByDefault": true
+          }
+        },
+        "SCS0006": {
+          "id": "SCS0006",
+          "shortDescription": "Weak hashing function.",
+          "fullDescription": "MD5 is no longer considered as a strong hashing algorithm.",
+          "defaultLevel": "warning",
+          "helpUri": "https://security-code-scan.github.io/#SCS0006",
+          "properties": {
+            "category": "Security",
+            "isEnabledByDefault": true
+          }
+        },
+        "SCS0007": {
+          "id": "SCS0007",
+          "shortDescription": "Potential XML eXternal Entity (XXE) vulnerability.",
+          "fullDescription": "Unsafe configuration of the XML parser may lead to XML eXternal Entity (XXE) processing vulnerability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://security-code-scan.github.io/#SCS0007",
+          "properties": {
+            "category": "Security",
+            "isEnabledByDefault": true
+          }
+        },
+        "SCS0028": {
+          "id": "SCS0028",
+          "shortDescription": "TypeNameHandling is set to the other value than 'None'. It may lead to deserialization vulnerability.",
+          "fullDescription": "Deserialization of untrusted data is unsafe.",
+          "defaultLevel": "warning",
+          "helpUri": "https://security-code-scan.github.io/#SCS0028",
+          "properties": {
+            "category": "Security",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

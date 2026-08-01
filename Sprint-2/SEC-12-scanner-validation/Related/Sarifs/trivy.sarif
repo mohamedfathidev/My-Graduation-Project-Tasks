@@ -1,0 +1,2081 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/main/sarif-2.1/schema/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "fullName": "Trivy Vulnerability Scanner",
+          "informationUri": "https://github.com/aquasecurity/trivy",
+          "name": "Trivy",
+          "rules": [
+            {
+              "id": "CVE-2024-0056",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "dotnet: Information Disclosure: MD.SqlClient(MDS) \u0026 System.data.SQLClient (SDS)"
+              },
+              "fullDescription": {
+                "text": "Microsoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-0056",
+              "help": {
+                "text": "Vulnerability CVE-2024-0056\nSeverity: HIGH\nPackage: Microsoft.Data.SqlClient\nFixed Version: 2.1.7, 3.1.5, 4.0.5, 5.1.3\nLink: [CVE-2024-0056](https://avd.aquasec.com/nvd/cve-2024-0056)\nMicrosoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability",
+                "markdown": "**Vulnerability CVE-2024-0056**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Microsoft.Data.SqlClient|2.1.7, 3.1.5, 4.0.5, 5.1.3|[CVE-2024-0056](https://avd.aquasec.com/nvd/cve-2024-0056)|\n\nMicrosoft.Data.SqlClient and System.Data.SqlClient SQL Data Provider Security Feature Bypass Vulnerability"
+              },
+              "properties": {
+                "cvssv3_baseScore": 8.7,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+                "precision": "very-high",
+                "security-severity": "8.7",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2022-41064",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": ".NET Information Disclosure Vulnerability"
+              },
+              "fullDescription": {
+                "text": ".NET Framework Information Disclosure Vulnerability"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2022-41064",
+              "help": {
+                "text": "Vulnerability CVE-2022-41064\nSeverity: MEDIUM\nPackage: Microsoft.Data.SqlClient\nFixed Version: 1.1.4, 2.1.2\nLink: [CVE-2022-41064](https://avd.aquasec.com/nvd/cve-2022-41064)\n.NET Framework Information Disclosure Vulnerability",
+                "markdown": "**Vulnerability CVE-2022-41064**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|Microsoft.Data.SqlClient|1.1.4, 2.1.2|[CVE-2022-41064](https://avd.aquasec.com/nvd/cve-2022-41064)|\n\n.NET Framework Information Disclosure Vulnerability"
+              },
+              "properties": {
+                "cvssv3_baseScore": 5.8,
+                "cvssv3_vector": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+                "precision": "very-high",
+                "security-severity": "5.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-21319",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "dotnet: .NET Denial of Service Vulnerability"
+              },
+              "fullDescription": {
+                "text": "Microsoft Identity Denial of service vulnerability"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-21319",
+              "help": {
+                "text": "Vulnerability CVE-2024-21319\nSeverity: MEDIUM\nPackage: System.IdentityModel.Tokens.Jwt\nFixed Version: 5.7.0, 6.34.0, 7.1.2\nLink: [CVE-2024-21319](https://avd.aquasec.com/nvd/cve-2024-21319)\nMicrosoft Identity Denial of service vulnerability",
+                "markdown": "**Vulnerability CVE-2024-21319**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|System.IdentityModel.Tokens.Jwt|5.7.0, 6.34.0, 7.1.2|[CVE-2024-21319](https://avd.aquasec.com/nvd/cve-2024-21319)|\n\nMicrosoft Identity Denial of service vulnerability"
+              },
+              "properties": {
+                "cvssv3_baseScore": 6.8,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+                "precision": "very-high",
+                "security-severity": "6.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-21907",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Improper Handling of Exceptional Conditions in Newtonsoft.Json"
+              },
+              "fullDescription": {
+                "text": "Newtonsoft.Json before version 13.0.1 is affected by a mishandling of exceptional conditions vulnerability. Crafted data that is passed to the JsonConvert.DeserializeObject method may trigger a StackOverflow exception resulting in denial of service. Depending on the usage of the library, an unauthenticated and remote attacker may be able to cause the denial of service condition."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-21907",
+              "help": {
+                "text": "Vulnerability CVE-2024-21907\nSeverity: HIGH\nPackage: Newtonsoft.Json\nFixed Version: 13.0.1\nLink: [CVE-2024-21907](https://avd.aquasec.com/nvd/cve-2024-21907)\nNewtonsoft.Json before version 13.0.1 is affected by a mishandling of exceptional conditions vulnerability. Crafted data that is passed to the JsonConvert.DeserializeObject method may trigger a StackOverflow exception resulting in denial of service. Depending on the usage of the library, an unauthenticated and remote attacker may be able to cause the denial of service condition.",
+                "markdown": "**Vulnerability CVE-2024-21907**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|Newtonsoft.Json|13.0.1|[CVE-2024-21907](https://avd.aquasec.com/nvd/cve-2024-21907)|\n\nNewtonsoft.Json before version 13.0.1 is affected by a mishandling of exceptional conditions vulnerability. Crafted data that is passed to the JsonConvert.DeserializeObject method may trigger a StackOverflow exception resulting in denial of service. Depending on the usage of the library, an unauthenticated and remote attacker may be able to cause the denial of service condition."
+              },
+              "properties": {
+                "cvssv3_baseScore": 7.5,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-27929",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Use After Free in SixLabors.ImageSharp"
+              },
+              "fullDescription": {
+                "text": "ImageSharp is a managed, cross-platform, 2D graphics library. A heap-use-after-free flaw was found in ImageSharp's InitializeImage() function of PngDecoderCore.cs file. This vulnerability is triggered when an attacker passes a specially crafted PNG image file to ImageSharp for conversion, potentially leading to information disclosure. This issue has been patched in versions 3.1.3 and 2.1.7."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-27929",
+              "help": {
+                "text": "Vulnerability CVE-2024-27929\nSeverity: HIGH\nPackage: SixLabors.ImageSharp\nFixed Version: 3.1.3, 2.1.7\nLink: [CVE-2024-27929](https://avd.aquasec.com/nvd/cve-2024-27929)\nImageSharp is a managed, cross-platform, 2D graphics library. A heap-use-after-free flaw was found in ImageSharp's InitializeImage() function of PngDecoderCore.cs file. This vulnerability is triggered when an attacker passes a specially crafted PNG image file to ImageSharp for conversion, potentially leading to information disclosure. This issue has been patched in versions 3.1.3 and 2.1.7.",
+                "markdown": "**Vulnerability CVE-2024-27929**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|SixLabors.ImageSharp|3.1.3, 2.1.7|[CVE-2024-27929](https://avd.aquasec.com/nvd/cve-2024-27929)|\n\nImageSharp is a managed, cross-platform, 2D graphics library. A heap-use-after-free flaw was found in ImageSharp's InitializeImage() function of PngDecoderCore.cs file. This vulnerability is triggered when an attacker passes a specially crafted PNG image file to ImageSharp for conversion, potentially leading to information disclosure. This issue has been patched in versions 3.1.3 and 2.1.7."
+              },
+              "properties": {
+                "cvssv3_baseScore": 7.1,
+                "cvssv3_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+                "precision": "very-high",
+                "security-severity": "7.1",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-41131",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "SixLabors ImageSharp Out-of-bounds Write"
+              },
+              "fullDescription": {
+                "text": "ImageSharp is a 2D graphics API. An Out-of-bounds Write vulnerability has been found in the ImageSharp gif decoder, allowing attackers to cause a crash using a specially crafted gif. This can potentially lead to denial of service. All users are advised to upgrade to v3.1.5 or v2.1.9."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-41131",
+              "help": {
+                "text": "Vulnerability CVE-2024-41131\nSeverity: HIGH\nPackage: SixLabors.ImageSharp\nFixed Version: 2.1.9, 3.1.5\nLink: [CVE-2024-41131](https://avd.aquasec.com/nvd/cve-2024-41131)\nImageSharp is a 2D graphics API. An Out-of-bounds Write vulnerability has been found in the ImageSharp gif decoder, allowing attackers to cause a crash using a specially crafted gif. This can potentially lead to denial of service. All users are advised to upgrade to v3.1.5 or v2.1.9.",
+                "markdown": "**Vulnerability CVE-2024-41131**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|SixLabors.ImageSharp|2.1.9, 3.1.5|[CVE-2024-41131](https://avd.aquasec.com/nvd/cve-2024-41131)|\n\nImageSharp is a 2D graphics API. An Out-of-bounds Write vulnerability has been found in the ImageSharp gif decoder, allowing attackers to cause a crash using a specially crafted gif. This can potentially lead to denial of service. All users are advised to upgrade to v3.1.5 or v2.1.9."
+              },
+              "properties": {
+                "cvssv3_baseScore": 7.5,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "cvssv40_baseScore": 8.7,
+                "cvssv40_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2025-27598",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "Out-of-bounds Write in SixLabors ImageSharp"
+              },
+              "fullDescription": {
+                "text": "ImageSharp is a 2D graphics API. An Out-of-bounds Write vulnerability has been found in the ImageSharp gif decoder, allowing attackers to cause a crash using a specially crafted gif. This can potentially lead to denial of service. The problem has been patched. All users are advised to upgrade to v3.1.7 or v2.1.10."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2025-27598",
+              "help": {
+                "text": "Vulnerability CVE-2025-27598\nSeverity: HIGH\nPackage: SixLabors.ImageSharp\nFixed Version: 3.1.7, 2.1.10\nLink: [CVE-2025-27598](https://avd.aquasec.com/nvd/cve-2025-27598)\nImageSharp is a 2D graphics API. An Out-of-bounds Write vulnerability has been found in the ImageSharp gif decoder, allowing attackers to cause a crash using a specially crafted gif. This can potentially lead to denial of service. The problem has been patched. All users are advised to upgrade to v3.1.7 or v2.1.10.",
+                "markdown": "**Vulnerability CVE-2025-27598**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|SixLabors.ImageSharp|3.1.7, 2.1.10|[CVE-2025-27598](https://avd.aquasec.com/nvd/cve-2025-27598)|\n\nImageSharp is a 2D graphics API. An Out-of-bounds Write vulnerability has been found in the ImageSharp gif decoder, allowing attackers to cause a crash using a specially crafted gif. This can potentially lead to denial of service. The problem has been patched. All users are advised to upgrade to v3.1.7 or v2.1.10."
+              },
+              "properties": {
+                "cvssv3_baseScore": 7.5,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-32035",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "SixLabors.ImageSharp vulnerable to Memory Allocation with Excessive Size Value"
+              },
+              "fullDescription": {
+                "text": "ImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in image decoders. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw.  This flaw can be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on ImageSharp for image processing tasks. Users and administrators are advised to update to the latest version of ImageSharp that addresses this vulnerability to mitigate the risk of exploitation. The problem has been patched in v3.1.4 and v2.1.8."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-32035",
+              "help": {
+                "text": "Vulnerability CVE-2024-32035\nSeverity: MEDIUM\nPackage: SixLabors.ImageSharp\nFixed Version: 2.1.8, 3.1.4\nLink: [CVE-2024-32035](https://avd.aquasec.com/nvd/cve-2024-32035)\nImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in image decoders. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw.  This flaw can be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on ImageSharp for image processing tasks. Users and administrators are advised to update to the latest version of ImageSharp that addresses this vulnerability to mitigate the risk of exploitation. The problem has been patched in v3.1.4 and v2.1.8.",
+                "markdown": "**Vulnerability CVE-2024-32035**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|SixLabors.ImageSharp|2.1.8, 3.1.4|[CVE-2024-32035](https://avd.aquasec.com/nvd/cve-2024-32035)|\n\nImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in image decoders. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw.  This flaw can be exploited to cause a denial of service (DoS) by depleting process memory, thereby affecting applications and services that rely on ImageSharp for image processing tasks. Users and administrators are advised to update to the latest version of ImageSharp that addresses this vulnerability to mitigate the risk of exploitation. The problem has been patched in v3.1.4 and v2.1.8."
+              },
+              "properties": {
+                "cvssv3_baseScore": 5.3,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "precision": "very-high",
+                "security-severity": "5.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-32036",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "SixLabors.ImageSharp vulnerable to data leakage"
+              },
+              "fullDescription": {
+                "text": "ImageSharp is a 2D graphics API. A data leakage flaw was found in ImageSharp's JPEG and TGA decoders. This vulnerability is triggered when an attacker passes a specially crafted JPEG or TGA image file to a software using ImageSharp, potentially disclosing sensitive information from other parts of the software in the resulting image buffer. The problem has been patched in v3.1.4 and v2.1.8."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-32036",
+              "help": {
+                "text": "Vulnerability CVE-2024-32036\nSeverity: MEDIUM\nPackage: SixLabors.ImageSharp\nFixed Version: 2.1.8, 3.1.4\nLink: [CVE-2024-32036](https://avd.aquasec.com/nvd/cve-2024-32036)\nImageSharp is a 2D graphics API. A data leakage flaw was found in ImageSharp's JPEG and TGA decoders. This vulnerability is triggered when an attacker passes a specially crafted JPEG or TGA image file to a software using ImageSharp, potentially disclosing sensitive information from other parts of the software in the resulting image buffer. The problem has been patched in v3.1.4 and v2.1.8.",
+                "markdown": "**Vulnerability CVE-2024-32036**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|SixLabors.ImageSharp|2.1.8, 3.1.4|[CVE-2024-32036](https://avd.aquasec.com/nvd/cve-2024-32036)|\n\nImageSharp is a 2D graphics API. A data leakage flaw was found in ImageSharp's JPEG and TGA decoders. This vulnerability is triggered when an attacker passes a specially crafted JPEG or TGA image file to a software using ImageSharp, potentially disclosing sensitive information from other parts of the software in the resulting image buffer. The problem has been patched in v3.1.4 and v2.1.8."
+              },
+              "properties": {
+                "cvssv3_baseScore": 5.3,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+                "precision": "very-high",
+                "security-severity": "5.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2024-41132",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "SixLabors ImageSharp has Excessive Memory Allocation in Gif Decoder"
+              },
+              "fullDescription": {
+                "text": "ImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in the Gif decoder. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw. All users are advised to upgrade to v3.1.5 or v2.1.9."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2024-41132",
+              "help": {
+                "text": "Vulnerability CVE-2024-41132\nSeverity: MEDIUM\nPackage: SixLabors.ImageSharp\nFixed Version: 2.1.9, 3.1.5\nLink: [CVE-2024-41132](https://avd.aquasec.com/nvd/cve-2024-41132)\nImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in the Gif decoder. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw. All users are advised to upgrade to v3.1.5 or v2.1.9.",
+                "markdown": "**Vulnerability CVE-2024-41132**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|SixLabors.ImageSharp|2.1.9, 3.1.5|[CVE-2024-41132](https://avd.aquasec.com/nvd/cve-2024-41132)|\n\nImageSharp is a 2D graphics API. A vulnerability discovered in the ImageSharp library, where the processing of specially crafted files can lead to excessive memory usage in the Gif decoder. The vulnerability is triggered when ImageSharp attempts to process image files that are designed to exploit this flaw. All users are advised to upgrade to v3.1.5 or v2.1.9."
+              },
+              "properties": {
+                "cvssv3_baseScore": 5.3,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "cvssv40_baseScore": 6.9,
+                "cvssv40_vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+                "precision": "very-high",
+                "security-severity": "5.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2025-54575",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "SixLabors ImageSharp Has Infinite Loop in GIF Decoder When Skipping Malformed Comment Extension Blocks"
+              },
+              "fullDescription": {
+                "text": "ImageSharp is a 2D graphics library. In versions below 2.1.11 and 3.0.0 through 3.1.10, a specially crafted GIF file containing a malformed comment extension block (with a missing block terminator) can cause the ImageSharp GIF decoder to enter an infinite loop while attempting to skip the block. This leads to a denial of service. Applications processing untrusted GIF input should upgrade to a patched version. This issue is fixed in versions 2.1.11 and 3.1.11."
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2025-54575",
+              "help": {
+                "text": "Vulnerability CVE-2025-54575\nSeverity: MEDIUM\nPackage: SixLabors.ImageSharp\nFixed Version: 2.1.11, 3.1.11\nLink: [CVE-2025-54575](https://avd.aquasec.com/nvd/cve-2025-54575)\nImageSharp is a 2D graphics library. In versions below 2.1.11 and 3.0.0 through 3.1.10, a specially crafted GIF file containing a malformed comment extension block (with a missing block terminator) can cause the ImageSharp GIF decoder to enter an infinite loop while attempting to skip the block. This leads to a denial of service. Applications processing untrusted GIF input should upgrade to a patched version. This issue is fixed in versions 2.1.11 and 3.1.11.",
+                "markdown": "**Vulnerability CVE-2025-54575**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|MEDIUM|SixLabors.ImageSharp|2.1.11, 3.1.11|[CVE-2025-54575](https://avd.aquasec.com/nvd/cve-2025-54575)|\n\nImageSharp is a 2D graphics library. In versions below 2.1.11 and 3.0.0 through 3.1.10, a specially crafted GIF file containing a malformed comment extension block (with a missing block terminator) can cause the ImageSharp GIF decoder to enter an infinite loop while attempting to skip the block. This leads to a denial of service. Applications processing untrusted GIF input should upgrade to a patched version. This issue is fixed in versions 2.1.11 and 3.1.11."
+              },
+              "properties": {
+                "cvssv3_baseScore": 5.3,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "precision": "very-high",
+                "security-severity": "5.3",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2021-24112",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "dotnet: Remote Code Execution Vulnerability"
+              },
+              "fullDescription": {
+                "text": ".NET Core Remote Code Execution Vulnerability"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2021-24112",
+              "help": {
+                "text": "Vulnerability CVE-2021-24112\nSeverity: CRITICAL\nPackage: System.Drawing.Common\nFixed Version: 4.7.2, 5.0.3\nLink: [CVE-2021-24112](https://avd.aquasec.com/nvd/cve-2021-24112)\n.NET Core Remote Code Execution Vulnerability",
+                "markdown": "**Vulnerability CVE-2021-24112**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|CRITICAL|System.Drawing.Common|4.7.2, 5.0.3|[CVE-2021-24112](https://avd.aquasec.com/nvd/cve-2021-24112)|\n\n.NET Core Remote Code Execution Vulnerability"
+              },
+              "properties": {
+                "cvssv3_baseScore": 9.8,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "precision": "very-high",
+                "security-severity": "9.8",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "CVE-2019-0820",
+              "name": "LanguageSpecificPackageVulnerability",
+              "shortDescription": {
+                "text": "dotnet: timeouts for regular expressions are not enforced"
+              },
+              "fullDescription": {
+                "text": "A denial of service vulnerability exists when .NET Framework and .NET Core improperly process RegEx strings, aka '.NET Framework and .NET Core Denial of Service Vulnerability'. This CVE ID is unique from CVE-2019-0980, CVE-2019-0981."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/nvd/cve-2019-0820",
+              "help": {
+                "text": "Vulnerability CVE-2019-0820\nSeverity: HIGH\nPackage: System.Text.RegularExpressions\nFixed Version: 4.3.1\nLink: [CVE-2019-0820](https://avd.aquasec.com/nvd/cve-2019-0820)\nA denial of service vulnerability exists when .NET Framework and .NET Core improperly process RegEx strings, aka '.NET Framework and .NET Core Denial of Service Vulnerability'. This CVE ID is unique from CVE-2019-0980, CVE-2019-0981.",
+                "markdown": "**Vulnerability CVE-2019-0820**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|System.Text.RegularExpressions|4.3.1|[CVE-2019-0820](https://avd.aquasec.com/nvd/cve-2019-0820)|\n\nA denial of service vulnerability exists when .NET Framework and .NET Core improperly process RegEx strings, aka '.NET Framework and .NET Core Denial of Service Vulnerability'. This CVE ID is unique from CVE-2019-0980, CVE-2019-0981."
+              },
+              "properties": {
+                "cvssv3_baseScore": 7.5,
+                "cvssv3_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "precision": "very-high",
+                "security-severity": "7.5",
+                "tags": [
+                  "vulnerability",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "DS-0002",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "Image user should not be 'root'"
+              },
+              "fullDescription": {
+                "text": "Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/ds-0002",
+              "help": {
+                "text": "Misconfiguration DS-0002\nType: Dockerfile Security Check\nSeverity: HIGH\nCheck: Image user should not be 'root'\nMessage: Specify at least 1 USER command in Dockerfile with non-root user as argument\nLink: [DS-0002](https://avd.aquasec.com/misconfig/ds-0002)\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.",
+                "markdown": "**Misconfiguration DS-0002**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Dockerfile Security Check|HIGH|Image user should not be 'root'|Specify at least 1 USER command in Dockerfile with non-root user as argument|[DS-0002](https://avd.aquasec.com/misconfig/ds-0002)|\n\nRunning containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "DS-0026",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "No HEALTHCHECK defined"
+              },
+              "fullDescription": {
+                "text": "You should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/ds-0026",
+              "help": {
+                "text": "Misconfiguration DS-0026\nType: Dockerfile Security Check\nSeverity: LOW\nCheck: No HEALTHCHECK defined\nMessage: Add HEALTHCHECK instruction in your Dockerfile\nLink: [DS-0026](https://avd.aquasec.com/misconfig/ds-0026)\nYou should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers.",
+                "markdown": "**Misconfiguration DS-0026**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Dockerfile Security Check|LOW|No HEALTHCHECK defined|Add HEALTHCHECK instruction in your Dockerfile|[DS-0026](https://avd.aquasec.com/misconfig/ds-0026)|\n\nYou should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "DS-0031",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "Secrets passed via `build-args` or envs or copied secret files"
+              },
+              "fullDescription": {
+                "text": "Passing secrets via `build-args` or envs or copying secret files can leak them out"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/ds-0031",
+              "help": {
+                "text": "Misconfiguration DS-0031\nType: Dockerfile Security Check\nSeverity: CRITICAL\nCheck: Secrets passed via `build-args` or envs or copied secret files\nMessage: Possible exposure of secret env \"ORDER_SVC_API_KEY\" in ENV\nLink: [DS-0031](https://avd.aquasec.com/misconfig/ds-0031)\nPassing secrets via `build-args` or envs or copying secret files can leak them out",
+                "markdown": "**Misconfiguration DS-0031**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Dockerfile Security Check|CRITICAL|Secrets passed via `build-args` or envs or copied secret files|Possible exposure of secret env \"ORDER_SVC_API_KEY\" in ENV|[DS-0031](https://avd.aquasec.com/misconfig/ds-0031)|\n\nPassing secrets via `build-args` or envs or copying secret files can leak them out"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.5",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0345",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "Disallow unrestricted S3 IAM Policies"
+              },
+              "fullDescription": {
+                "text": "Ensure that the creation of the unrestricted S3 IAM policies is disallowed."
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0345",
+              "help": {
+                "text": "Misconfiguration AWS-0345\nType: Terraform Security Check\nSeverity: HIGH\nCheck: Disallow unrestricted S3 IAM Policies\nMessage: IAM role uses a policy that allows 's3:*' action\nLink: [AWS-0345](https://avd.aquasec.com/misconfig/aws-0345)\nEnsure that the creation of the unrestricted S3 IAM policies is disallowed.",
+                "markdown": "**Misconfiguration AWS-0345**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|HIGH|Disallow unrestricted S3 IAM Policies|IAM role uses a policy that allows 's3:*' action|[AWS-0345](https://avd.aquasec.com/misconfig/aws-0345)|\n\nEnsure that the creation of the unrestricted S3 IAM policies is disallowed."
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0104",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "A security group rule should not allow unrestricted egress to any IP address."
+              },
+              "fullDescription": {
+                "text": "Opening up ports to connect out to the public internet is generally to be avoided. You should restrict access to IP addresses or ranges that are explicitly required where possible.\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0104",
+              "help": {
+                "text": "Misconfiguration AWS-0104\nType: Terraform Security Check\nSeverity: CRITICAL\nCheck: A security group rule should not allow unrestricted egress to any IP address.\nMessage: Security group rule allows unrestricted egress to any IP address.\nLink: [AWS-0104](https://avd.aquasec.com/misconfig/aws-0104)\nOpening up ports to connect out to the public internet is generally to be avoided. You should restrict access to IP addresses or ranges that are explicitly required where possible.\n",
+                "markdown": "**Misconfiguration AWS-0104**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|CRITICAL|A security group rule should not allow unrestricted egress to any IP address.|Security group rule allows unrestricted egress to any IP address.|[AWS-0104](https://avd.aquasec.com/misconfig/aws-0104)|\n\nOpening up ports to connect out to the public internet is generally to be avoided. You should restrict access to IP addresses or ranges that are explicitly required where possible.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "9.5",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "CRITICAL"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0124",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "Missing description for security group rule."
+              },
+              "fullDescription": {
+                "text": "Security group rules should include a description for auditing purposes.\n\nSimplifies auditing, debugging, and managing security groups.\n"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0124",
+              "help": {
+                "text": "Misconfiguration AWS-0124\nType: Terraform Security Check\nSeverity: LOW\nCheck: Missing description for security group rule.\nMessage: Security group rule does not have a description.\nLink: [AWS-0124](https://avd.aquasec.com/misconfig/aws-0124)\nSecurity group rules should include a description for auditing purposes.\n\nSimplifies auditing, debugging, and managing security groups.\n",
+                "markdown": "**Misconfiguration AWS-0124**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|LOW|Missing description for security group rule.|Security group rule does not have a description.|[AWS-0124](https://avd.aquasec.com/misconfig/aws-0124)|\n\nSecurity group rules should include a description for auditing purposes.\n\nSimplifies auditing, debugging, and managing security groups.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0086",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 Access block should block public ACL"
+              },
+              "fullDescription": {
+                "text": "S3 buckets should block public ACLs on buckets and any objects they contain. By blocking, PUTs with fail if the object has any public ACL a.\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0086",
+              "help": {
+                "text": "Misconfiguration AWS-0086\nType: Terraform Security Check\nSeverity: HIGH\nCheck: S3 Access block should block public ACL\nMessage: Public access block does not block public ACLs\nLink: [AWS-0086](https://avd.aquasec.com/misconfig/aws-0086)\nS3 buckets should block public ACLs on buckets and any objects they contain. By blocking, PUTs with fail if the object has any public ACL a.\n",
+                "markdown": "**Misconfiguration AWS-0086**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|HIGH|S3 Access block should block public ACL|Public access block does not block public ACLs|[AWS-0086](https://avd.aquasec.com/misconfig/aws-0086)|\n\nS3 buckets should block public ACLs on buckets and any objects they contain. By blocking, PUTs with fail if the object has any public ACL a.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0087",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 Access block should block public policy"
+              },
+              "fullDescription": {
+                "text": "S3 bucket policy should have block public policy to prevent users from putting a policy that enable public access.\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0087",
+              "help": {
+                "text": "Misconfiguration AWS-0087\nType: Terraform Security Check\nSeverity: HIGH\nCheck: S3 Access block should block public policy\nMessage: Public access block does not block public policies\nLink: [AWS-0087](https://avd.aquasec.com/misconfig/aws-0087)\nS3 bucket policy should have block public policy to prevent users from putting a policy that enable public access.\n",
+                "markdown": "**Misconfiguration AWS-0087**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|HIGH|S3 Access block should block public policy|Public access block does not block public policies|[AWS-0087](https://avd.aquasec.com/misconfig/aws-0087)|\n\nS3 bucket policy should have block public policy to prevent users from putting a policy that enable public access.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0089",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 Bucket Logging"
+              },
+              "fullDescription": {
+                "text": "Ensures S3 bucket logging is enabled for S3 buckets"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0089",
+              "help": {
+                "text": "Misconfiguration AWS-0089\nType: Terraform Security Check\nSeverity: LOW\nCheck: S3 Bucket Logging\nMessage: Bucket has logging disabled\nLink: [AWS-0089](https://avd.aquasec.com/misconfig/aws-0089)\nEnsures S3 bucket logging is enabled for S3 buckets",
+                "markdown": "**Misconfiguration AWS-0089**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|LOW|S3 Bucket Logging|Bucket has logging disabled|[AWS-0089](https://avd.aquasec.com/misconfig/aws-0089)|\n\nEnsures S3 bucket logging is enabled for S3 buckets"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0090",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 Data should be versioned"
+              },
+              "fullDescription": {
+                "text": "Versioning in Amazon S3 is a means of keeping multiple variants of an object in the same bucket.\n\nYou can use the S3 Versioning feature to preserve, retrieve, and restore every version of every object stored in your buckets.\n\nWith versioning you can recover more easily from both unintended user actions and application failures.\n\nWhen you enable versioning, also keep in mind the potential costs of storing noncurrent versions of objects. To help manage those costs, consider setting up an S3 Lifecycle configuration.\n"
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0090",
+              "help": {
+                "text": "Misconfiguration AWS-0090\nType: Terraform Security Check\nSeverity: MEDIUM\nCheck: S3 Data should be versioned\nMessage: Bucket does not have versioning enabled\nLink: [AWS-0090](https://avd.aquasec.com/misconfig/aws-0090)\nVersioning in Amazon S3 is a means of keeping multiple variants of an object in the same bucket.\n\nYou can use the S3 Versioning feature to preserve, retrieve, and restore every version of every object stored in your buckets.\n\nWith versioning you can recover more easily from both unintended user actions and application failures.\n\nWhen you enable versioning, also keep in mind the potential costs of storing noncurrent versions of objects. To help manage those costs, consider setting up an S3 Lifecycle configuration.\n",
+                "markdown": "**Misconfiguration AWS-0090**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|MEDIUM|S3 Data should be versioned|Bucket does not have versioning enabled|[AWS-0090](https://avd.aquasec.com/misconfig/aws-0090)|\n\nVersioning in Amazon S3 is a means of keeping multiple variants of an object in the same bucket.\n\nYou can use the S3 Versioning feature to preserve, retrieve, and restore every version of every object stored in your buckets.\n\nWith versioning you can recover more easily from both unintended user actions and application failures.\n\nWhen you enable versioning, also keep in mind the potential costs of storing noncurrent versions of objects. To help manage those costs, consider setting up an S3 Lifecycle configuration.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "5.5",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "MEDIUM"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0091",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 Access Block should Ignore Public ACL"
+              },
+              "fullDescription": {
+                "text": "S3 buckets should ignore public ACLs on buckets and any objects they contain. By ignoring rather than blocking, PUT calls with public ACLs will still be applied but the ACL will be ignored.\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0091",
+              "help": {
+                "text": "Misconfiguration AWS-0091\nType: Terraform Security Check\nSeverity: HIGH\nCheck: S3 Access Block should Ignore Public ACL\nMessage: Public access block does not ignore public ACLs\nLink: [AWS-0091](https://avd.aquasec.com/misconfig/aws-0091)\nS3 buckets should ignore public ACLs on buckets and any objects they contain. By ignoring rather than blocking, PUT calls with public ACLs will still be applied but the ACL will be ignored.\n",
+                "markdown": "**Misconfiguration AWS-0091**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|HIGH|S3 Access Block should Ignore Public ACL|Public access block does not ignore public ACLs|[AWS-0091](https://avd.aquasec.com/misconfig/aws-0091)|\n\nS3 buckets should ignore public ACLs on buckets and any objects they contain. By ignoring rather than blocking, PUT calls with public ACLs will still be applied but the ACL will be ignored.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0093",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 Access block should restrict public bucket to limit access"
+              },
+              "fullDescription": {
+                "text": "S3 buckets should restrict public policies for the bucket. By enabling, the restrict_public_buckets, only the bucket owner and AWS Services can access if it has a public policy.\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0093",
+              "help": {
+                "text": "Misconfiguration AWS-0093\nType: Terraform Security Check\nSeverity: HIGH\nCheck: S3 Access block should restrict public bucket to limit access\nMessage: Public access block does not restrict public buckets\nLink: [AWS-0093](https://avd.aquasec.com/misconfig/aws-0093)\nS3 buckets should restrict public policies for the bucket. By enabling, the restrict_public_buckets, only the bucket owner and AWS Services can access if it has a public policy.\n",
+                "markdown": "**Misconfiguration AWS-0093**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|HIGH|S3 Access block should restrict public bucket to limit access|Public access block does not restrict public buckets|[AWS-0093](https://avd.aquasec.com/misconfig/aws-0093)|\n\nS3 buckets should restrict public policies for the bucket. By enabling, the restrict_public_buckets, only the bucket owner and AWS Services can access if it has a public policy.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0094",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 buckets should each define an aws_s3_bucket_public_access_block"
+              },
+              "fullDescription": {
+                "text": "The \"block public access\" settings in S3 override individual policies that apply to a given bucket, meaning that all public access can be controlled in one central types for that bucket. It is therefore good practice to define these settings for each bucket in order to clearly define the public access that can be allowed for it.\n"
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0094",
+              "help": {
+                "text": "Misconfiguration AWS-0094\nType: Terraform Security Check\nSeverity: LOW\nCheck: S3 buckets should each define an aws_s3_bucket_public_access_block\nMessage: Bucket does not have a corresponding public access block.\nLink: [AWS-0094](https://avd.aquasec.com/misconfig/aws-0094)\nThe \"block public access\" settings in S3 override individual policies that apply to a given bucket, meaning that all public access can be controlled in one central types for that bucket. It is therefore good practice to define these settings for each bucket in order to clearly define the public access that can be allowed for it.\n",
+                "markdown": "**Misconfiguration AWS-0094**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|LOW|S3 buckets should each define an aws_s3_bucket_public_access_block|Bucket does not have a corresponding public access block.|[AWS-0094](https://avd.aquasec.com/misconfig/aws-0094)|\n\nThe \"block public access\" settings in S3 override individual policies that apply to a given bucket, meaning that all public access can be controlled in one central types for that bucket. It is therefore good practice to define these settings for each bucket in order to clearly define the public access that can be allowed for it.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "2.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "LOW"
+                ]
+              }
+            },
+            {
+              "id": "AWS-0132",
+              "name": "Misconfiguration",
+              "shortDescription": {
+                "text": "S3 encryption should use Customer Managed Keys"
+              },
+              "fullDescription": {
+                "text": "Encryption using AWS keys provides protection for your S3 buckets. To gain greater control over encryption, such as key rotation, access policies, and auditability, use customer managed keys (CMKs) with SSE-KMS.\nNote that SSE-KMS is not supported for S3 server access logging destination buckets; in such cases, use SSE-S3 instead.\n"
+              },
+              "defaultConfiguration": {
+                "level": "error"
+              },
+              "helpUri": "https://avd.aquasec.com/misconfig/aws-0132",
+              "help": {
+                "text": "Misconfiguration AWS-0132\nType: Terraform Security Check\nSeverity: HIGH\nCheck: S3 encryption should use Customer Managed Keys\nMessage: Bucket does not encrypt data with a customer managed key.\nLink: [AWS-0132](https://avd.aquasec.com/misconfig/aws-0132)\nEncryption using AWS keys provides protection for your S3 buckets. To gain greater control over encryption, such as key rotation, access policies, and auditability, use customer managed keys (CMKs) with SSE-KMS.\nNote that SSE-KMS is not supported for S3 server access logging destination buckets; in such cases, use SSE-S3 instead.\n",
+                "markdown": "**Misconfiguration AWS-0132**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Terraform Security Check|HIGH|S3 encryption should use Customer Managed Keys|Bucket does not encrypt data with a customer managed key.|[AWS-0132](https://avd.aquasec.com/misconfig/aws-0132)|\n\nEncryption using AWS keys provides protection for your S3 buckets. To gain greater control over encryption, such as key rotation, access policies, and auditability, use customer managed keys (CMKs) with SSE-KMS.\nNote that SSE-KMS is not supported for S3 server access logging destination buckets; in such cases, use SSE-S3 instead.\n"
+              },
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "8.0",
+                "tags": [
+                  "misconfiguration",
+                  "security",
+                  "HIGH"
+                ]
+              }
+            }
+          ],
+          "version": "0.72.0"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "CVE-2024-0056",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Package: Microsoft.Data.SqlClient\nInstalled Version: 2.1.1\nVulnerability CVE-2024-0056\nSeverity: HIGH\nFixed Version: 2.1.7, 3.1.5, 4.0.5, 5.1.3\nLink: [CVE-2024-0056](https://avd.aquasec.com/nvd/cve-2024-0056)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 310,
+                  "startColumn": 1,
+                  "endLine": 316,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: Microsoft.Data.SqlClient@2.1.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-41064",
+          "ruleIndex": 1,
+          "level": "warning",
+          "message": {
+            "text": "Package: Microsoft.Data.SqlClient\nInstalled Version: 2.1.1\nVulnerability CVE-2022-41064\nSeverity: MEDIUM\nFixed Version: 1.1.4, 2.1.2\nLink: [CVE-2022-41064](https://avd.aquasec.com/nvd/cve-2022-41064)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 310,
+                  "startColumn": 1,
+                  "endLine": 316,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: Microsoft.Data.SqlClient@2.1.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-21319",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: Microsoft.IdentityModel.JsonWebTokens\nInstalled Version: 6.10.0\nVulnerability CVE-2024-21319\nSeverity: MEDIUM\nFixed Version: 5.7.0, 6.34.0, 7.1.2\nLink: [CVE-2024-21319](https://avd.aquasec.com/nvd/cve-2024-21319)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 331,
+                  "startColumn": 1,
+                  "endLine": 337,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: Microsoft.IdentityModel.JsonWebTokens@6.10.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-21907",
+          "ruleIndex": 3,
+          "level": "error",
+          "message": {
+            "text": "Package: Newtonsoft.Json\nInstalled Version: 12.0.1\nVulnerability CVE-2024-21907\nSeverity: HIGH\nFixed Version: 13.0.1\nLink: [CVE-2024-21907](https://avd.aquasec.com/nvd/cve-2024-21907)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 373,
+                  "startColumn": 1,
+                  "endLine": 379,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: Newtonsoft.Json@12.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-27929",
+          "ruleIndex": 4,
+          "level": "error",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-27929\nSeverity: HIGH\nFixed Version: 3.1.3, 2.1.7\nLink: [CVE-2024-27929](https://avd.aquasec.com/nvd/cve-2024-27929)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 1,
+                  "endLine": 400,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-41131",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-41131\nSeverity: HIGH\nFixed Version: 2.1.9, 3.1.5\nLink: [CVE-2024-41131](https://avd.aquasec.com/nvd/cve-2024-41131)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 1,
+                  "endLine": 400,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2025-27598",
+          "ruleIndex": 6,
+          "level": "error",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2025-27598\nSeverity: HIGH\nFixed Version: 3.1.7, 2.1.10\nLink: [CVE-2025-27598](https://avd.aquasec.com/nvd/cve-2025-27598)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 1,
+                  "endLine": 400,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-32035",
+          "ruleIndex": 7,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-32035\nSeverity: MEDIUM\nFixed Version: 2.1.8, 3.1.4\nLink: [CVE-2024-32035](https://avd.aquasec.com/nvd/cve-2024-32035)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 1,
+                  "endLine": 400,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-32036",
+          "ruleIndex": 8,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-32036\nSeverity: MEDIUM\nFixed Version: 2.1.8, 3.1.4\nLink: [CVE-2024-32036](https://avd.aquasec.com/nvd/cve-2024-32036)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 1,
+                  "endLine": 400,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-41132",
+          "ruleIndex": 9,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-41132\nSeverity: MEDIUM\nFixed Version: 2.1.9, 3.1.5\nLink: [CVE-2024-41132](https://avd.aquasec.com/nvd/cve-2024-41132)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 1,
+                  "endLine": 400,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2025-54575",
+          "ruleIndex": 10,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2025-54575\nSeverity: MEDIUM\nFixed Version: 2.1.11, 3.1.11\nLink: [CVE-2025-54575](https://avd.aquasec.com/nvd/cve-2025-54575)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 394,
+                  "startColumn": 1,
+                  "endLine": 400,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-24112",
+          "ruleIndex": 11,
+          "level": "error",
+          "message": {
+            "text": "Package: System.Drawing.Common\nInstalled Version: 4.7.0\nVulnerability CVE-2021-24112\nSeverity: CRITICAL\nFixed Version: 4.7.2, 5.0.3\nLink: [CVE-2021-24112](https://avd.aquasec.com/nvd/cve-2021-24112)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 408,
+                  "startColumn": 1,
+                  "endLine": 414,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: System.Drawing.Common@4.7.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-21319",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: System.IdentityModel.Tokens.Jwt\nInstalled Version: 6.10.0\nVulnerability CVE-2024-21319\nSeverity: MEDIUM\nFixed Version: 5.7.0, 6.34.0, 7.1.2\nLink: [CVE-2024-21319](https://avd.aquasec.com/nvd/cve-2024-21319)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 415,
+                  "startColumn": 1,
+                  "endLine": 421,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/bin/Debug/net8.0/OrderApp.deps.json: System.IdentityModel.Tokens.Jwt@6.10.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-0056",
+          "ruleIndex": 0,
+          "level": "error",
+          "message": {
+            "text": "Package: Microsoft.Data.SqlClient\nInstalled Version: 2.1.1\nVulnerability CVE-2024-0056\nSeverity: HIGH\nFixed Version: 2.1.7, 3.1.5, 4.0.5, 5.1.3\nLink: [CVE-2024-0056](https://avd.aquasec.com/nvd/cve-2024-0056)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 28,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: Microsoft.Data.SqlClient@2.1.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2022-41064",
+          "ruleIndex": 1,
+          "level": "warning",
+          "message": {
+            "text": "Package: Microsoft.Data.SqlClient\nInstalled Version: 2.1.1\nVulnerability CVE-2022-41064\nSeverity: MEDIUM\nFixed Version: 1.1.4, 2.1.2\nLink: [CVE-2022-41064](https://avd.aquasec.com/nvd/cve-2022-41064)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 28,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: Microsoft.Data.SqlClient@2.1.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-21319",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: Microsoft.IdentityModel.JsonWebTokens\nInstalled Version: 6.10.0\nVulnerability CVE-2024-21319\nSeverity: MEDIUM\nFixed Version: 5.7.0, 6.34.0, 7.1.2\nLink: [CVE-2024-21319](https://avd.aquasec.com/nvd/cve-2024-21319)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 1,
+                  "endLine": 100,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: Microsoft.IdentityModel.JsonWebTokens@6.10.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-21907",
+          "ruleIndex": 3,
+          "level": "error",
+          "message": {
+            "text": "Package: Newtonsoft.Json\nInstalled Version: 12.0.1\nVulnerability CVE-2024-21907\nSeverity: HIGH\nFixed Version: 13.0.1\nLink: [CVE-2024-21907](https://avd.aquasec.com/nvd/cve-2024-21907)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: Newtonsoft.Json@12.0.1"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-27929",
+          "ruleIndex": 4,
+          "level": "error",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-27929\nSeverity: HIGH\nFixed Version: 3.1.3, 2.1.7\nLink: [CVE-2024-27929](https://avd.aquasec.com/nvd/cve-2024-27929)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-41131",
+          "ruleIndex": 5,
+          "level": "error",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-41131\nSeverity: HIGH\nFixed Version: 2.1.9, 3.1.5\nLink: [CVE-2024-41131](https://avd.aquasec.com/nvd/cve-2024-41131)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2025-27598",
+          "ruleIndex": 6,
+          "level": "error",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2025-27598\nSeverity: HIGH\nFixed Version: 3.1.7, 2.1.10\nLink: [CVE-2025-27598](https://avd.aquasec.com/nvd/cve-2025-27598)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-32035",
+          "ruleIndex": 7,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-32035\nSeverity: MEDIUM\nFixed Version: 2.1.8, 3.1.4\nLink: [CVE-2024-32035](https://avd.aquasec.com/nvd/cve-2024-32035)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-32036",
+          "ruleIndex": 8,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-32036\nSeverity: MEDIUM\nFixed Version: 2.1.8, 3.1.4\nLink: [CVE-2024-32036](https://avd.aquasec.com/nvd/cve-2024-32036)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-41132",
+          "ruleIndex": 9,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2024-41132\nSeverity: MEDIUM\nFixed Version: 2.1.9, 3.1.5\nLink: [CVE-2024-41132](https://avd.aquasec.com/nvd/cve-2024-41132)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2025-54575",
+          "ruleIndex": 10,
+          "level": "warning",
+          "message": {
+            "text": "Package: SixLabors.ImageSharp\nInstalled Version: 1.0.4\nVulnerability CVE-2025-54575\nSeverity: MEDIUM\nFixed Version: 2.1.11, 3.1.11\nLink: [CVE-2025-54575](https://avd.aquasec.com/nvd/cve-2025-54575)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 53,
+                  "startColumn": 1,
+                  "endLine": 58,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: SixLabors.ImageSharp@1.0.4"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2021-24112",
+          "ruleIndex": 11,
+          "level": "error",
+          "message": {
+            "text": "Package: System.Drawing.Common\nInstalled Version: 4.7.0\nVulnerability CVE-2021-24112\nSeverity: CRITICAL\nFixed Version: 4.7.2, 5.0.3\nLink: [CVE-2021-24112](https://avd.aquasec.com/nvd/cve-2021-24112)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 227,
+                  "startColumn": 1,
+                  "endLine": 235,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: System.Drawing.Common@4.7.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2024-21319",
+          "ruleIndex": 2,
+          "level": "warning",
+          "message": {
+            "text": "Package: System.IdentityModel.Tokens.Jwt\nInstalled Version: 6.10.0\nVulnerability CVE-2024-21319\nSeverity: MEDIUM\nFixed Version: 5.7.0, 6.34.0, 7.1.2\nLink: [CVE-2024-21319](https://avd.aquasec.com/nvd/cve-2024-21319)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: System.IdentityModel.Tokens.Jwt@6.10.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "CVE-2019-0820",
+          "ruleIndex": 12,
+          "level": "error",
+          "message": {
+            "text": "Package: System.Text.RegularExpressions\nInstalled Version: 4.3.0\nVulnerability CVE-2019-0820\nSeverity: HIGH\nFixed Version: 4.3.1\nLink: [CVE-2019-0820](https://avd.aquasec.com/nvd/cve-2019-0820)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/OrderApp/packages.lock.json",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 1,
+                  "endLine": 77,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "src/OrderApp/packages.lock.json: System.Text.RegularExpressions@4.3.0"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DS-0002",
+          "ruleIndex": 13,
+          "level": "error",
+          "message": {
+            "text": "Artifact: Dockerfile\nType: dockerfile\nVulnerability DS-0002\nSeverity: HIGH\nMessage: Specify at least 1 USER command in Dockerfile with non-root user as argument\nLink: [DS-0002](https://avd.aquasec.com/misconfig/ds-0002)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "Dockerfile"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DS-0026",
+          "ruleIndex": 14,
+          "level": "note",
+          "message": {
+            "text": "Artifact: Dockerfile\nType: dockerfile\nVulnerability DS-0026\nSeverity: LOW\nMessage: Add HEALTHCHECK instruction in your Dockerfile\nLink: [DS-0026](https://avd.aquasec.com/misconfig/ds-0026)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "Dockerfile"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "DS-0031",
+          "ruleIndex": 15,
+          "level": "error",
+          "message": {
+            "text": "Artifact: Dockerfile\nType: dockerfile\nVulnerability DS-0031\nSeverity: CRITICAL\nMessage: Possible exposure of secret env \"ORDER_SVC_API_KEY\" in ENV\nLink: [DS-0031](https://avd.aquasec.com/misconfig/ds-0031)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "Dockerfile",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 1,
+                  "endLine": 23,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "Dockerfile"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0345",
+          "ruleIndex": 16,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/iam.tf\nType: terraform\nVulnerability AWS-0345\nSeverity: HIGH\nMessage: IAM role uses a policy that allows 's3:*' action\nLink: [AWS-0345](https://avd.aquasec.com/misconfig/aws-0345)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/iam.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 1,
+                  "endLine": 38,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/iam.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0104",
+          "ruleIndex": 17,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/main.tf\nType: terraform\nVulnerability AWS-0104\nSeverity: CRITICAL\nMessage: Security group rule allows unrestricted egress to any IP address.\nLink: [AWS-0104](https://avd.aquasec.com/misconfig/aws-0104)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/main.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/main.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0124",
+          "ruleIndex": 18,
+          "level": "note",
+          "message": {
+            "text": "Artifact: infra/main.tf\nType: terraform\nVulnerability AWS-0124\nSeverity: LOW\nMessage: Security group rule does not have a description.\nLink: [AWS-0124](https://avd.aquasec.com/misconfig/aws-0124)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/main.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 1,
+                  "endLine": 35,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/main.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0086",
+          "ruleIndex": 19,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0086\nSeverity: HIGH\nMessage: No public access block so not blocking public acls\nLink: [AWS-0086](https://avd.aquasec.com/misconfig/aws-0086)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0086",
+          "ruleIndex": 19,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0086\nSeverity: HIGH\nMessage: Public access block does not block public ACLs\nLink: [AWS-0086](https://avd.aquasec.com/misconfig/aws-0086)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 1,
+                  "endLine": 16,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0087",
+          "ruleIndex": 20,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0087\nSeverity: HIGH\nMessage: No public access block so not blocking public policies\nLink: [AWS-0087](https://avd.aquasec.com/misconfig/aws-0087)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0087",
+          "ruleIndex": 20,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0087\nSeverity: HIGH\nMessage: Public access block does not block public policies\nLink: [AWS-0087](https://avd.aquasec.com/misconfig/aws-0087)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 1,
+                  "endLine": 17,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0089",
+          "ruleIndex": 21,
+          "level": "note",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0089\nSeverity: LOW\nMessage: Bucket has logging disabled\nLink: [AWS-0089](https://avd.aquasec.com/misconfig/aws-0089)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0089",
+          "ruleIndex": 21,
+          "level": "note",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0089\nSeverity: LOW\nMessage: Bucket has logging disabled\nLink: [AWS-0089](https://avd.aquasec.com/misconfig/aws-0089)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0090",
+          "ruleIndex": 22,
+          "level": "warning",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0090\nSeverity: MEDIUM\nMessage: Bucket does not have versioning enabled\nLink: [AWS-0090](https://avd.aquasec.com/misconfig/aws-0090)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 1,
+                  "endLine": 42,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0090",
+          "ruleIndex": 22,
+          "level": "warning",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0090\nSeverity: MEDIUM\nMessage: Bucket does not have versioning enabled\nLink: [AWS-0090](https://avd.aquasec.com/misconfig/aws-0090)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 1,
+                  "endLine": 27,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0091",
+          "ruleIndex": 23,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0091\nSeverity: HIGH\nMessage: No public access block so not blocking public acls\nLink: [AWS-0091](https://avd.aquasec.com/misconfig/aws-0091)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0091",
+          "ruleIndex": 23,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0091\nSeverity: HIGH\nMessage: Public access block does not ignore public ACLs\nLink: [AWS-0091](https://avd.aquasec.com/misconfig/aws-0091)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 1,
+                  "endLine": 18,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0093",
+          "ruleIndex": 24,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0093\nSeverity: HIGH\nMessage: No public access block so not restricting public buckets\nLink: [AWS-0093](https://avd.aquasec.com/misconfig/aws-0093)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0093",
+          "ruleIndex": 24,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0093\nSeverity: HIGH\nMessage: Public access block does not restrict public buckets\nLink: [AWS-0093](https://avd.aquasec.com/misconfig/aws-0093)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 1,
+                  "endLine": 19,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0094",
+          "ruleIndex": 25,
+          "level": "note",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0094\nSeverity: LOW\nMessage: Bucket does not have a corresponding public access block.\nLink: [AWS-0094](https://avd.aquasec.com/misconfig/aws-0094)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0132",
+          "ruleIndex": 26,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0132\nSeverity: HIGH\nMessage: Bucket does not encrypt data with a customer managed key.\nLink: [AWS-0132](https://avd.aquasec.com/misconfig/aws-0132)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "AWS-0132",
+          "ruleIndex": 26,
+          "level": "error",
+          "message": {
+            "text": "Artifact: infra/s3.tf\nType: terraform\nVulnerability AWS-0132\nSeverity: HIGH\nMessage: Bucket does not encrypt data with a customer managed key.\nLink: [AWS-0132](https://avd.aquasec.com/misconfig/aws-0132)"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "infra/s3.tf",
+                  "uriBaseId": "ROOTPATH"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 5,
+                  "endColumn": 1
+                }
+              },
+              "message": {
+                "text": "infra/s3.tf"
+              }
+            }
+          ]
+        }
+      ],
+      "columnKind": "utf16CodeUnits",
+      "originalUriBaseIds": {
+        "ROOTPATH": {
+          "uri": "file:///home/runner/work/sentinelai-fixtures/sentinelai-fixtures/"
+        }
+      }
+    }
+  ]
+}
