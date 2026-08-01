@@ -14,6 +14,6 @@ Main project: [Sentinel-AI-Sec/sentinelai-fixtures](https://github.com/Sentinel-
 
 | Task | Title | Status | Writeup |
 |---|---|---|---|
-| SEC-12 | Scanner runners on the runner | ✅ Complete | [→](./SEC-12-scanner-validation/) |
-| SEC-14 | SARIF/JSON normalization | 🔄 In progress | [→](./SEC-14-sarif-normalization/) |
+| SEC-12 | Scanner runners on the runner | ✅ Complete | [→](./Sprint-2/SEC-12-scanner-validation/) |
+| SEC-14 | SARIF/JSON normalization | 🔄 In progress | [→](./Sprint-2/SEC-14-sarif-normalization/) |
 
