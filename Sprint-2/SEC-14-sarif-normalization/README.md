@@ -7,7 +7,8 @@
 ---
 
 ## What this task is
-
+## Overview about SEC-14 Approach Before action.yml
+![Workflow Diagram](/Sprint-2/SEC-14-sarif-normalization/images/Sec-14.png)
 Four scanners run on the GitHub Actions runner — **Roslyn/SCS** (code), **OSV-Scanner**
 (dependencies), **Trivy** and **Checkov** (infra) — and each emits its results in its own
 shape. SEC-14 is the translator: it reads whatever each tool wrote and turns every single
