@@ -7,7 +7,7 @@
 ---
 
 ## The idea in one sentence
-![Workflow Diagram](/Sprint-3/SEC-12-scanner-validation/Related/images/test-flow.png)
+![Workflow Diagram](/Sprint-3/Sec-47-validation/images/Sec-47.png)
 
 Write integration tests that check the *data* passed between pipeline stages — not "did it crash," but "is the shape and the ID exactly right" — so a mismatch is caught in CI, not discovered three sprints later as zero exploit chains.
 
